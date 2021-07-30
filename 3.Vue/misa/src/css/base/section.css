@@ -1,0 +1,15 @@
+.section select{
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-top: 15px;
+    width: 156px;
+    height: 40px;
+}
+.section select:hover{
+    border-color: #019160;
+}
+section:focus{
+    border-color: #019160;
+}
+

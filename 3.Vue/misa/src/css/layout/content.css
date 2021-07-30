@@ -1,0 +1,117 @@
+.content {
+    position: absolute;
+    top: 45px;
+    left: 201px;
+    margin-left: 12px;
+}
+
+.content-head .left {
+    float: left;
+    font-family: MISAGoogleSans-Bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.content-head .button {
+    position: relative;
+    left: 835px;
+    margin-top: 18px;
+}
+
+.content-head .button .icon {
+    padding-top: 5.5px;
+    /* padding-left: 16px; */
+    padding-right: 8px;
+}
+
+.content-box {
+    display: flex;
+}
+
+.content-box .section.s1 {
+    margin-top: 0px;
+    margin-left: 81px;
+}
+
+.content-box .section.s2 {
+    margin-left: 20px;
+}
+.section.s1 .select-box.box2 .options-container.box2{
+    position: absolute;
+    background: #fff;
+    color: #000;
+    max-height: none;
+    width: 184px;
+    top: 103px;
+    /* opacity: 1; */
+}
+.section.s2 .select-box.box3 .options-container.box3{
+    position: absolute;
+    background: #fff;
+    color: #000;
+    max-height: none;
+    width: 184px;
+    top: 103px;
+    /* opacity: 1; */
+}
+.content-box .refresh {
+    width: 37px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+    line-height: 40px;
+    box-sizing: unset;
+    margin-left: 428px;
+    border-radius: 4px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.content-box .refresh:hover {
+   border-color: #019160;
+}
+.content-table{
+    width: 99%;
+}
+
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+}
+
+.footer .left {
+    margin-top: 20px;
+}
+
+.footer .dot-next-prev {
+    margin-top: 1px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -2px 2px;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    box-sizing: unset;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #019160;
+}
+
+.footer .right {
+    margin-top: 20px;
+    margin-right: 16px;
+}
