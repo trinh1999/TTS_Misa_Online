@@ -1,0 +1,32 @@
+.pagging-bar{
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #bbbbbb;
+}
+
+.pagging-bar .pagging-left{
+    min-width: 200px;
+    height:100%;
+    background-color: rgb(161, 87, 87);
+
+}
+.pagging-bar .pagging-right{
+    position: absolute;
+    left: 0;
+    min-width: 100px;
+    align-self: center;
+    height:100%;
+    background-color: rgb(5, 5, 5);
+    
+}
+.pagging-bar .pagging-tool{
+    justify-self: center;
+    min-width: 200px;
+    height:100%;
+    background-color: rgb(109, 87, 161);
+}
+    

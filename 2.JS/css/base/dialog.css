@@ -1,0 +1,22 @@
+.dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+    border: 1px solid #bbbbbb;
+
+}
+.dialog .model{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 999;
+}

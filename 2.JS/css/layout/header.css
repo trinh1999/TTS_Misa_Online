@@ -1,0 +1,80 @@
+.header {
+    height: 48px;
+    width: 100%;
+    display:flex;
+}
+
+.header .header-left {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    border-right: 1px solid #ccc;
+    height: 48px;
+    /* float: left; */
+}
+
+.header .header-left .toggle {
+    width: 24px;
+    height: 24px;
+    margin: 12px 10px 12px 16px;
+    background-image: url(../../content/img/toggle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.header .header-left .logo {
+    height: 24px;
+    width: 100px;
+    background-image: url(../../content/img/cukcuk-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header .header-right{
+    border-bottom: 1px solid #ccc;
+    width: 1165px;
+
+}
+.header-right .dropdown {
+    border: none;
+    margin-left: 16px;
+    /* margin-top: 15px; */
+    width: 156px;
+    font-family: MISAGoogleSans-Bold;
+    float: left;
+}
+.selected.box1{
+    border-color: #fff;
+    margin-bottom: 0px;
+}
+
+.header-right .avatar{
+    float: right;
+    margin-top: 9px;
+    margin-right: 16px;
+}
+.avatar .text::before{
+    /* content: url("../../content/icon/avatar-default.png"); */
+    background-image: url('../../content/icon/avatar-default.png');
+    background-size: 30px 30px;
+    display: inline-block;
+    width: 30px; 
+    height: 30px;
+    content:"";
+    position: absolute;
+    right: 174px;
+    cursor: pointer;
+   
+}
+.avatar .text::after{
+    content: url("../../content/icon/option.png");
+    position:relative;
+    top: 6px;
+    cursor: pointer;
+}
+.avatar .text span{
+    margin-right: 16px;
+}
+

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm quản lý nhà hàng - CUKCUK.VN</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/layout/header.css">
+    <link rel="stylesheet" href="../css/layout/menu.css">
+    <link rel="stylesheet" href="../css/layout/content.css">
+    <!-- <link rel="stylesheet" href="../css/form/body-form.css"> -->
+    <link rel="stylesheet" href="../css/form/form-employee.css">
+    <link rel="stylesheet" href="../css/base/dropdown.css">
+</head>
+
+<body>
+<div class="list">
+  <div class="header">
+      <div class="header-left">
+          <div class="toggle"></div>
+          <div class="logo"></div>
+      </div>
+      <div class="header-right">
+          <div class="dropdown">
+            <div class="select-box box1">
+              <div class="options-container box1">
+                <div class="option box1">
+                  <input type="radio" class="radio" name="category"/>
+                  <label for="">Nhà hàng Biển Đông</label>
+                </div>
+      
+                <div class="option box1">
+                  <input type="radio" class="radio" name="category" />
+                  <label for="">Nhà hàng Hải Quan</label>
+                </div>
+      
+                <div class="option box1">
+                  <input type="radio" class="radio" name="category" />
+                  <label for="">Nhà hàng Bến Phà</label>
+                </div>
+              </div>
+      
+              <div class="selected box1">
+                  Nhà hàng Biển Đông
+              </div>
+            </div>
+          </div>
+          <div class="avatar">
+              <div class="text"><span>Nguyễn Văn Mạnh</span></div>
+          </div>
+      </div>
+  </div>
+  <div class="menu">
+      <div class="menu-item">
+          <div class="menu-icon menu-icon-dashboard"></div>
+          <div class="menu-item-text">Tổng quan</div>
+      </div>
+      <div class="menu-item">
+          <div class="menu-icon menu-icon-report"></div>
+          <div class="menu-item-text">Báo cáo</div>
+      </div>
+      <div class="menu-item">
+          <div class="menu-icon menu-icon-dashboard"></div>
+          <div class="menu-item-text">Mua hàng</div>
+      </div>
+      <div class="menu-item">
+          <div class="menu-icon menu-icon-employee"></div>
+          <div class="menu-item-text">Danh mục nhân viên</div>
+      </div>
+      <div class="menu-item">
+          <div class="menu-icon menu-icon-employee"></div>
+          <div class="menu-item-text">Danh mục khách hàng</div>
+      </div>
+      <div class="menu-item">
+          <div class="menu-icon menu-icon-setting"></div>
+          <div class="menu-item-text">Thiết lập hệ thống</div>
+      </div>
+  </div>
+  <div class="content">
+      <div class="content-head">
+          <div class="left">Danh sách nhân viên</div>
+          <div id="btnAdd" class="button">
+              <div class="icon"><img src="../content/icon/add.png" /></div>
+              <div class="text">Thêm nhân viên</div>
+          </div>
+      </div>
+      <div class="content-box">
+          <div class="text-box-icon">
+              <i class="input-icon"><img src="../content/icon/search.png"/></i>
+              <input type="text" class="input-field" placeholder="Tìm kiếm theo mã, Tên hoặc Số điện thoại"/>
+          </div>
+          <div class="section s1">
+            <div class="select-box box2">
+              <div class="options-container box2">
+                <div class="option box2">
+                  <input type="radio" class="radio" name="category"/>
+                  <label for="">Tất cả phòng ban</label>
+                </div>
+      
+                <div class="option box2">
+                  <input type="radio" class="radio" name="category" />
+                  <label for="">Phòng nhân sự</label>
+                </div>
+      
+                <div class="option box2">
+                  <input type="radio" class="radio" name="category" />
+                  <label for="science">Phòng đào tạo</label>
+                </div>
+              </div>
+      
+              <div class="selected box2">
+                Tất cả phòng ban
+              </div>
+            </div>
+          </div>
+          <div class="section s2">
+            <div class="select-box box3">
+              <div class="options-container box3">
+                <div class="option box3">
+                  <input type="radio" class="radio" name="category"/>
+                  <label for="">Tất cả vị trí</label>
+                </div>
+      
+                <div class="option box3">
+                  <input type="radio" class="radio" name="category" />
+                  <label for="">Nhân viên Marketting</label>
+                </div>
+      
+                <div class="option box3">
+                  <input type="radio" class="radio" name="category" />
+                  <label for="">Giám đốc</label>
+                </div>
+              </div>
+      
+              <div class="selected box3">
+                Nhân viên Marketting
+              </div>
+            </div>
+          </div>
+          <div class="refresh"><img src="../content/icon/refresh.png"/></div>
+      </div>
+      <div class="content-table">
+        <table class="table" id="listEmployees" width="100%">
+              <thead>
+                <tr>
+                  <th style="width: 69px;">Mã nhân viên</th>
+                  <th style="width: 105px;padding-right: 5px;">Họ và tên</th>
+                  <th style="padding-left: 0; width: 115px;padding-right: 0;">Giới tính</th>
+                  <th style="width: 60px; padding-left: 0;">Ngày sinh</th>
+                  <th style="width: 75px;">Điện thoại</th>
+                  <th style="width: 150px;">Email</th>
+                  <th style="width: 117px;">Chức vụ</th>
+                  <th style="width: 98px;padding-right: 0;">Phòng ban</th>
+                  <th style="width: 96px; padding-left: 10px;">Mức lương cơ bản</th>
+                  <th style="padding-left: 10px;">Tình trạng công việc</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>NV-532408</td>
+                  <td>Hồ Văn Lương</td>
+                  <td>Nam</td>
+                  <td>11/08/1978</td>
+                  <td>0940458449</td>
+                  <td>cuon@example.com</td>
+                  <td>Giám đốc</td>
+                  <td>Phòng nhân sự</td>
+                  <td>17.739.391</td>
+                  <td>Đang thử việc</td>
+                </tr>
+                <!-- <tr>
+                  <td>NV-548257</td>
+                  <td>Trương Thị Huyền</td>
+                  <td>Khác</td>
+                  <td>25/05/1978</td>
+                  <td>0979647132</td>
+                  <td>misa643@example.com</td>
+                  <td>Thu ngân</td>
+                  <td>Phòng đào tạo</td>
+                  <td></td>
+                  <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                  <td>NV-234134</td>
+                  <td>Trần Thị Thảo</td>
+                  <td>Khác</td>
+                  <td>15/08/1978</td>
+                  <td>0940458449</td>
+                  <td>thao@example.com</td>
+                  <td>Giám đốc</td>
+                  <td>Phòng công nghệ</td>
+                  <td>15.539.391</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>NV-232408</td>
+                  <td>Mai Thị Bích</td>
+                  <td></td>
+                  <td>17/06/1992</td>
+                  <td>0928475976</td>
+                  <td>kute@example.com</td>
+                  <td>Thu ngân</td>
+                  <td>Phòng Marketting</td>
+                  <td>16.279.117</td>
+                  <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                  <td>NV-132408</td>
+                  <td>Hoàng Mĩ Quỳnh</td>
+                  <td>Nam</td>
+                  <td>07/07/1976</td>
+                  <td>0999446512</td>
+                  <td>trap989@example.com</td>
+                  <td>Nhân viên Marketting</td>
+                  <td>Phòng Marketting</td>
+                  <td>29.139.391</td>
+                  <td>Đã nghỉ việc</td>
+                </tr>
+                <tr>
+                  <td>NV-832408</td>
+                  <td>Đinh Thị Thu</td>
+                  <td></td>
+                  <td>08/11/1958</td>
+                  <td>0949858449</td>
+                  <td>kute88@example.com</td>
+                  <td>Giám đốc</td>
+                  <td>Phòng nhân sự</td>
+                  <td>22.727.391</td>
+                  <td>Đã nghỉ việc</td>
+                </tr>
+                <tr>
+                  <td>NV-234408</td>
+                  <td>Nguyễn Khánh Bình</td>
+                  <td>Nam</td>
+                  <td>05/03/1952</td>
+                  <td>0952458849</td>
+                  <td>huing@example.com</td>
+                  <td>Giám đốc</td>
+                  <td>Phòng nhân sự</td>
+                  <td>10.739.391</td>
+                  <td>Đang làm việc</td>
+                </tr>
+                <tr>
+                  <td>NV-802408</td>
+                  <td>Nông Văn Khương</td>
+                  <td></td>
+                  <td>06/12/1991</td>
+                  <td>0940458449</td>
+                  <td>hong@example.com</td>
+                  <td>Nhân viên Marketting</td>
+                  <td>Phòng công nghệ</td>
+                  <td>22.339.391</td>
+                  <td>Đã nghỉ hưu</td>
+                </tr>
+                <tr>
+                  <td>NV-202408</td>
+                  <td>Trần Việt Duy</td>
+                  <td></td>
+                  <td>25/05/1993</td>
+                  <td>0917458849</td>
+                  <td>duy29@example.com</td>
+                  <td>Thu ngân</td>
+                  <td>Phòng công nghệ</td>
+                  <td>25.739.391</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>NV-362408</td>
+                  <td>Nguyễn Thị Thư</td>
+                  <td>Nam</td>
+                  <td>09/05/1978</td>
+                  <td>0940458449</td>
+                  <td>thu@example.com</td>
+                  <td>Thu ngân</td>
+                  <td>Phòng Marketting</td>
+                  <td>17.739.391</td>
+                  <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                  <td>NV-202608</td>
+                  <td>Trần Thị Chung</td>
+                  <td>Nữ</td>
+                  <td>18/08/1958</td>
+                  <td>0945758123</td>
+                  <td>chung1@example.com</td>
+                  <td>Giám đốc</td>
+                  <td>Phòng Marketting</td>
+                  <td>12.139.391</td>
+                  <td>Đang thử việc</td>
+                </tr>
+                <tr>
+                  <td>NV-003408</td>
+                  <td>Nguyễn Ngọc Lệ</td>
+                  <td>Khác</td>
+                  <td>01/01/1970</td>
+                  <td>0960458449</td>
+                  <td></td>
+                  <td>Nhân viên Marketting</td>
+                  <td>Phòng đào tạo</td>
+                  <td>21.39.391</td>
+                  <td>Đã nghỉ việc</td>
+                </tr>
+                <tr>
+                  <td>NV-395408</td>
+                  <td>Trương Văn Liễu</td>
+                  <td>Khác</td>
+                  <td>11/08/1950</td>
+                  <td>0976558432</td>
+                  <td>cuon37@example.com</td>
+                  <td>Thu ngân</td>
+                  <td>Phòng đào tạo</td>
+                  <td>10.639.391</td>
+                  <td>Đã nghỉ việc</td>
+                </tr>
+                <tr>
+                  <td>NV-282408</td>
+                  <td>Trương Văn Toàn</td>
+                  <td>Nam</td>
+                  <td>01/08/199</td>
+                  <td>0956458234</td>
+                  <td>pro@example.com</td>
+                  <td>Giám đốc</td>
+                  <td>Phòng Marketting</td>
+                  <td>24.739.391</td>
+                  <td>Đã nghỉ việc</td>
+                </tr>
+                <tr>
+                  <td>NV-812408</td>
+                  <td>Trương Mỹ Thoa</td>
+                  <td>Nam</td>
+                  <td>16/08/1968</td>
+                  <td>0956558449</td>
+                  <td>kute@nowhere.com</td>
+                  <td>Thu ngân</td>
+                  <td>Phòng Marketting</td>
+                  <td></td>
+                  <td>Đang thử việc</td>
+                </tr> -->
+              </tbody>
+            </table>
+      </div>
+      <div class="footer">
+          <div class="left">Hiển thị 1-10/1000 nhân viên</div>
+          <div class="dot-next-prev">
+              <img src="../content/icon/btn-firstpage.svg">
+              <img src="../content/icon/btn-prev-page.svg">
+              <span class="dot">1</span> 
+              <span class="dot">2</span> 
+              <span class="dot">3</span>
+              <span class="dot">4</span>
+              <img src="../content/icon/btn-next-page.svg">
+              <img src="../content/icon/btn-lastpage.svg">
+          </div>
+          <div class="right">10 nhân viên/trang</div>
+      </div>
+  </div>
+</div>
+
+<div id="dialogEmployee" class="form-employee">
+  <div class="model"></div>
+  <div class="title-employee">
+        <div class="left">THÔNG TIN NHÂN VIÊN</div>
+        <div class="right"><img id="Cancel" src="../content/icon/x.svg"/></div>
+  </div>
+  <div class="content-employee">
+        <div class="left">
+            <div class="avatar"></div>
+            <div class="text">(Vui lòng chọn ảnh có định dạng .jpg, .jeg, .png, .gif.)</div>
+        </div>
+        <div class="right-box">
+            <div class="top">
+                <div class="title1">A.THÔNG TIN CHUNG:</div>
+                <div class="line"></div>
+                <form>
+                    <div class="column1">
+                        <label >Mã nhân viên (<span>*</span>)</label>
+                        <br>
+                        <input id="txtEmployeeCode" required type="text" name="mã" placeholder="Nhập mã...">
+                        <br>
+                        <label>Ngày sinh</label>
+                        <br>
+                        <input id="dateDateOfBirth" type="date" name="date">
+                        <br>
+                        <label>Số CMTND/Căn cước (<span>*</span>)</label>
+                        <br>
+                        <input type="text" required name="cmtnd" placeholder="Nhập CMTND...">
+                        <br>
+                        <label>Nơi cấp</label>
+                        <br>
+                        <input  type="text" name="place" placeholder="Nhập nơi cấp...">
+                        <br>
+                        <label>Email (<span>*</span>)</label>
+                        <br>
+                        <input id="txtEmail" required type="text" name="email" placeholder="Nhập email...">
+                    </div>
+                    <div class="column2">
+                        <label >Họ và tên (<span>*</span>)</label>
+                        <br>
+                        <input id="txtFullName" type="text" required name="tên" placeholder="Nhập họ và tên...">
+                        <br>
+                        <label>Giới tính</label>
+                        <br>
+                        <div class="select-box box11">
+                            <div class="options-container box11">
+                              <div class="option box11">
+                                <input type="radio" class="radio" name="category"/>
+                                <label for="">Nam</label>
+                              </div>
+                    
+                              <div class="option box11">
+                                <input type="radio" class="radio" name="category" />
+                                <label for="">Nữ</label>
+                              </div>
+                    
+                              <div class="option box11">
+                                <input type="radio" class="radio" name="category" />
+                                <label for="">Khác</label>
+                              </div>
+                            </div>
+                    
+                            <div class="selected box11">
+                                Nam
+                            </div>
+                        </div>
+                        <br>
+                        <label>Ngày cấp</label>
+                        <br>
+                        <input type="date" name="ngayCap">
+                        <br><br><br><br><br>
+                        <p style="margin-top: 5px;margin-bottom: 0px;">Số điện thoại (<span>*</span>)</p>
+                        <input id="txtPhoneNumber" type="text" required name="place" placeholder="Nhập SĐT...">
+                    </div>
+                </form>
+            </div>
+            <div class="bottom">
+                <div class="title1">B.THÔNG TIN CÔNG VIỆC:</div>
+                <div class="line"></div>
+                <form>
+                    <div class="column3">
+                        <label>Vị trí</label>
+                        <br>
+                        <div class="select-box box22">
+                            <div class="options-container box22">
+                              <div class="option box22">
+                                <input type="radio" value="" class="radio" name="category"/>
+                                <label for="">Giám đốc</label>
+                              </div>
+                    
+                              <div class="option box22">
+                                <input type="radio" value="" class="radio" name="category" />
+                                <label for="">Nhân viên Marketting</label>
+                              </div>
+                    
+                              <div class="option box22">
+                                <input type="radio" value="" class="radio" name="category" />
+                                <label for="">Thu ngân</label>
+                              </div>
+                            </div>
+                    
+                            <div class="selected box22">
+                                Giám đốc
+                            </div>
+                          </div>
+                        <br>
+                        <label>Mã số thuế cá nhân</label>
+                        <br>
+                        <input type="text" name="thuế" placeholder="Nhập mã số thuế...">
+                        <label>Ngày gia nhập công ty</label>
+                        <br>
+                        <input type="date" name="datecty">
+                    </div>
+                    <div class="column4">
+                        <label>Phòng ban</label>
+                        <br>
+                        <div class="select-box box33">
+                            <div class="options-container box33">
+                              <div class="option box33">
+                                <input type="radio" value="" class="radio" name="category"/>
+                                <label for="">Phòng nhân sự</label>
+                              </div>
+                    
+                              <div class="option box33">
+                                <input type="radio" value="" class="radio" name="category" />
+                                <label for="">Phòng công nghệ</label>
+                              </div>
+                    
+                              <div class="option box33">
+                                <input type="radio" value="" class="radio" name="category" />
+                                <label for="">Phòng Marketting</label>
+                              </div>
+                            </div>
+                    
+                            <div class="selected box33">
+                                Phòng nhân sự
+                            </div>
+                          </div>
+                        <br>
+                        <label>Mức lương cơ bản</label>
+                        <br>
+                        <input class="money" id="txtSalary" type="text" name="luong" style="padding-right: 54px;">
+                        <span class="dvt"><i>(VNĐ)</i></span>
+                        <br>
+                        <label>Tình trạng công việc</label>
+                        <br>
+                        <div class="select-box box44">
+                            <div class="options-container box44">
+                              <div class="option box44">
+                                <input type="radio" value="" class="radio" name="category"/>
+                                <label for="">Đang làm việc</label>
+                              </div>
+                    
+                              <div class="option box44">
+                                <input type="radio" value="" class="radio" name="category" />
+                                <label for="">Đang thử việc</label>
+                              </div>
+                    
+                              <div class="option box44">
+                                <input type="radio" value="" class="radio" name="category" />
+                                <label for="">Đã nghỉ việc</label>
+                              </div>
+                            </div>
+                    
+                            <div class="selected box44">
+                                Đang làm việc
+                            </div>
+                          </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+  </div>
+  <div class="footer-employee">
+      <div class="sub">
+            <div class="button btn1"><p>Hủy</p></div>
+            <div class="button btn2"><img src="../content/icon/save-solid.svg" width="20px" height="20px">Lưu</div>
+      </div>
+  </div>
+</div>
+    <script src="../js/lib/jquery-3.6.0.min.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/page/employee.js"></script>
+</body>
+
+</html>
