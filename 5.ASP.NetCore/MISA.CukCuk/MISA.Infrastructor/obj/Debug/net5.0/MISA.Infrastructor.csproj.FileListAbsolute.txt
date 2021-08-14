@@ -1,0 +1,15 @@
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\bin\Debug\net5.0\MISA.Infrastructor.deps.json
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\bin\Debug\net5.0\MISA.Infrastructor.dll
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\bin\Debug\net5.0\ref\MISA.Infrastructor.dll
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\bin\Debug\net5.0\MISA.Infrastructor.pdb
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\bin\Debug\net5.0\MISA.Core.dll
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\bin\Debug\net5.0\MISA.Core.pdb
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.csproj.AssemblyReference.cache
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.AssemblyInfoInputs.cache
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.AssemblyInfo.cs
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.csproj.CoreCompileInputs.cache
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.csproj.CopyComplete
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.dll
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\ref\MISA.Infrastructor.dll
+C:\Users\VietPC\source\repos\MISA.CukCuk\MISA.Infrastructor\obj\Debug\net5.0\MISA.Infrastructor.pdb

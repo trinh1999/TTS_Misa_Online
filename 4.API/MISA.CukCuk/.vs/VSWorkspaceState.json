@@ -1,15 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MISA.CukCuk.Api",
-    "\\MISA.CukCuk.Api\\bin",
-    "\\MISA.CukCuk.Api\\Controllers",
-    "\\MISA.CukCuk.Api\\Model",
-    "\\MISA.CukCuk.Api\\obj",
     "\\MISA.CukCuk.Api\\obj\\Debug",
-    "\\MISA.CukCuk.Api\\obj\\Debug\\net5.0\\staticwebassets",
-    "\\MISA.CukCuk.Api\\Properties"
+    "\\MISA.CukCuk.Api\\obj\\Release"
   ],
-  "SelectedNode": "\\MISA.CukCuk.sln",
   "PreviewInSolutionExplorer": false
 }

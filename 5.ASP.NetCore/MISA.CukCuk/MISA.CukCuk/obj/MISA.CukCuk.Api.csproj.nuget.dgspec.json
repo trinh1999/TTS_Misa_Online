@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj",
+        "projectName": "MISA.Core",
+        "projectPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj",
+        "packagesPath": "C:\\Users\\VietPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\VietPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.Api.csproj",
+        "projectName": "MISA.CukCuk.Api",
+        "projectPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.CukCuk\\MISA.CukCuk.Api.csproj",
+        "packagesPath": "C:\\Users\\VietPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.CukCuk\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\VietPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj"
+              },
+              "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Infrastructor\\MISA.Infrastructor.csproj": {
+                "projectPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Infrastructor\\MISA.Infrastructor.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.13.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Infrastructor\\MISA.Infrastructor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Infrastructor\\MISA.Infrastructor.csproj",
+        "projectName": "MISA.Infrastructor",
+        "projectPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Infrastructor\\MISA.Infrastructor.csproj",
+        "packagesPath": "C:\\Users\\VietPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Infrastructor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\VietPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj": {
+                "projectPath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\5.ASP.NetCore\\MISA.CukCuk\\MISA.Core\\MISA.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[1.3.11, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

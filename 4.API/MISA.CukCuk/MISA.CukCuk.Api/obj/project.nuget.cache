@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hvjAwrN57C0HhnEL6tPiH4U6i/2Mj9oWsEm/hk429jN6htUWGyVhZkt/Ytp6g/CfmevqioljMvAY2t9H2pNKsQ==",
+  "dgSpecHash": "Jz6GiBcRX+pWp8fgdnrFS4MWBl9uNQzbcRUxGI3wTqeBEosvHRUxmCI3zolYDVCd9wowK90ykH0dF9higC9vkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\VietPC\\Documents\\TTS_Misa\\TT.MISA-main\\4.API\\MISA.CukCuk\\MISA.CukCuk.Api\\MISA.CukCuk.Api.csproj",
+  "projectFilePath": "C:\\Users\\VietPC\\Desktop\\TTS_Misa_Online\\4.API\\MISA.CukCuk\\MISA.CukCuk.Api\\MISA.CukCuk.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VietPC\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\VietPC\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
