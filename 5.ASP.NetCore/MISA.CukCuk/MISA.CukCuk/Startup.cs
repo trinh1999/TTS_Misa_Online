@@ -40,8 +40,17 @@ namespace MISA.CukCuk
             {
                 jsonOptions.JsonSerializerOptions.PropertyNamingPolicy = null;
             });
+            //Customer DI
             services.AddScoped<ICustomerServices, CustomerServices>();
-            services.AddScoped<ICustomerReponsitory, CustomerReponsitory>(); 
+            services.AddScoped<ICustomerReponsitory, CustomerReponsitory>();
+
+            //Employee DI
+            services.AddScoped<IEmployeeServices, EmployeeServices>();
+            services.AddScoped<IEmployeeReponsitory, EmployeeReponsitory>();
+
+            //Base DI
+            services.AddScoped(typeof(IBaseServices), typeof(BaseServices));
+            services.AddScoped(typeof(IBaseReponsitory), typeof(BaseReponsitory));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
